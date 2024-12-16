@@ -1,8 +1,9 @@
+import Header from "./compontents/Header";
 import Navbar from "./compontents/navbar";
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="bold">
+      <Header />
       <div className="underline">
         <Navbar />
       </div>
