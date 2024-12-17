@@ -1,7 +1,5 @@
 import Message from "./Message.jsx";
 
-function App() {
+export default function App() {
   return <div><Message / ></div>
 }
-
-export default App;

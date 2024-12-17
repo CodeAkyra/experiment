@@ -1,17 +1,16 @@
-
 // Pascal case or PascalCase is a programming
 // naming convention where the first letter
 // of each compound word in a variable is capitalized
 
-function Message(){
+export default function Message() {
+  // JSX : JavaScript XML
 
-
-    // JSX : JavaScript XML
-
-    const name = 'Mark';
-    if(name)
-        return <h1>Hello {name}</h1>
-    return <h1>Hello World!</h1>
+  const name = "Mark";
+  if (name)
+    return (
+      <div>
+        <h1 className="text-3xl font-bold underline">Hello {name}</h1>
+      </div>
+    );
+  return <h1 className="underline">Hello World!</h1>;
 }
-
-export default Message;
