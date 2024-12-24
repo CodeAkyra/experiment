@@ -1,0 +1,240 @@
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.animate.animate--delay-1s {
+  animation-delay: 1s;
+}
+
+.animate.animate--fast {
+  animation-duration: 0.6s;
+}
+
+.animate.animate--slow {
+  animation-duration: 3s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes back {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes front {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes icon {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.rotate:hover {
+  cursor: pointer;
+  animation-name: rotate;
+  animation-timing-function: linear;
+}
+
+.back {
+  box-shadow: 0px 0px 4px;
+  background-color: #a3a3a3;
+  width: 50px;
+  height: 50px;
+}
+
+.back:hover {
+  cursor: pointer;
+  animation-name: back;
+  animation-timing-function: linear;
+}
+
+.front {
+  box-shadow: 0px 0px 4px;
+  background-color: #e9e9e9;
+  width: 50px;
+  height: 50px;
+  rotate: 45deg;
+}
+
+.front:hover {
+  cursor: pointer;
+  animation-name: front;
+  animation-timing-function: linear;
+}
+
+.icon {
+  rotate: -45deg;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+
+.icon:hover {
+  cursor: pointer;
+  animation-name: back;
+  animation-timing-function: linear;
+}
+
+@keyframes back1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transition: 2s;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes front1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transition: 2s;
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes icon1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+.back1 {
+  box-shadow: 0px 0px 4px black;
+  background-color: #a3a3a3;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: back;
+  animation-timing-function: linear;
+}
+.back1:hover {
+  transition: 1s;
+  cursor: pointer;
+  animation-name: back;
+  animation-timing-function: linear;
+}
+
+.front1 {
+  box-shadow: 0px 0px 4px black;
+  background-color: #e9e9e9;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: front;
+  animation-timing-function: linear;
+}
+
+.front1:hover {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.fa-brands.fa-react {
+  color: #087ea4;
+  font-size: 30px;
+  transition: 1s;
+  display: flex;
+  text-shadow: 0px 0px black;
+  animation-name: back;
+  animation-timing-function: linear;
+}
+
+.fa-brands.fa-react:hover {
+  color: #13c4ff;
+  font-size: 40px;
+
+  transition: 1s;
+  text-shadow: 0px 0px 7px;
+  animation-name: icon1;
+  animation-timing-function: linear;
+}
+
+.ReactIcon {
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  height: 90px;
+  width: fit-content;
+  /* background-color: #a3a3a3; */
+  /* border: solid black; */
+}
+
+.container {
+  display: inline-block;
+}
+
+.headerIntro.animate--type {
+  animation: typing 7s steps(58) infinite,
+    cursor 0.4s step-end infinite alternate;
+}
+
+.headerIntro {
+  color: #f5f5f5;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Karla", serif;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Start with no text */
+  }
+  50% {
+    width: 100%; /* Fully typed text */
+  }
+  85% {
+    width: 100%; /* Hold the text visible */
+  }
+  100% {
+    width: 0; /* Reset to no text */
+  }
+}
