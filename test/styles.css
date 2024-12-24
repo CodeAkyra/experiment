@@ -126,8 +126,7 @@
   font-size: 30px;
   transition: 1s;
   display: flex;
-  animation-name: back;
-  animation-timing-function: linear;
+  position: static;
 }
 
 .fa-brands.fa-react:hover,
@@ -136,12 +135,9 @@
 .fa-brands.fa-css3-alt:hover,
 .fa-brands.fa-js:hover,
 .fa-brands.fa-php:hover {
-  color: #00000043;
   font-size: 40px;
-  transition: 1s;
-  text-shadow: 0px 0px 7px;
-  animation-name: icon;
-  animation-timing-function: linear;
+  transition: 0.5s;
+  text-shadow: 0px 0px 40px rgb(255, 255, 255);
 }
 
 /* LOGO ICON KEYFRAMES */
