@@ -1,0 +1,216 @@
+/* TAIL WIND CSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* TAIL WIND CSS*/
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.animate.animate--delay-1s {
+  animation-delay: 1s;
+}
+
+.animate.animate--fast {
+  animation-duration: 0.6s;
+}
+
+.animate.animate--slow {
+  animation-duration: 3s;
+}
+
+/* TYPING ANIMATION  */
+.container {
+  display: inline-block;
+}
+
+.headerIntro.animate--type {
+  animation: typing 7s steps(58) infinite,
+    cursor 0.4s step-end infinite alternate;
+}
+
+.headerIntro {
+  color: #f5f5f5;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Karla", serif;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* TYPING ANIMATION  */
+
+/* SKILL LOGO ICONS */
+
+.skillSet {
+  display: flex;
+}
+
+.Icon {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  padding: 10px;
+  /* border: solid black; */
+  margin: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  height: 90px;
+  width: fit-content;
+  /* background-color: #a3a3a3; */
+  /* border: solid black; */
+}
+
+.square-front,
+.square-back {
+  box-shadow: 0px 0px 4px black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-timing-function: linear;
+  transition: 1s;
+}
+
+.square-back {
+  background-color: #818181;
+  animation-name: back;
+}
+
+.square-front {
+  background-color: #e9e9e9;
+  animation-name: front;
+}
+
+.square-back:hover,
+.square-front:hover {
+  border-radius: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/* LOGO ICONS */
+
+.skillText {
+  /* border: solid black; */
+}
+
+.fa-brands.fa-react {
+  color: #087ea4;
+}
+.fa-brands.fa-twitter {
+  color: #38bdf8;
+}
+.fa-brands.fa-html5 {
+  color: #e14e1d;
+}
+.fa-brands.fa-css3-alt {
+  color: #0277bd;
+}
+.fa-brands.fa-js {
+  color: #f7df1e;
+}
+.fa-brands.fa-php {
+  color: #777bb3;
+}
+
+.fa-brands.fa-react,
+.fa-brands.fa-twitter,
+.fa-brands.fa-html5,
+.fa-brands.fa-css3-alt,
+.fa-brands.fa-js,
+.fa-brands.fa-php {
+  text-shadow: 0.5px 0.5px 1px black;
+  font-size: 30px;
+  transition: 1s;
+  display: flex;
+  position: static;
+}
+
+.fa-brands.fa-react:hover,
+.fa-brands.fa-twitter:hover,
+.fa-brands.fa-html5:hover,
+.fa-brands.fa-css3-alt:hover,
+.fa-brands.fa-js:hover,
+.fa-brands.fa-php:hover {
+  font-size: 40px;
+  transition: 0.5s;
+  text-shadow: 0px 0px 40px rgb(255, 255, 255);
+}
+
+.cat {
+  height: 30px;
+  transition: 1s;
+}
+
+.cat:hover {
+  height: 40px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 40px rgb(255, 255, 255);
+}
+
+/* LOGO ICON KEYFRAMES */
+@keyframes back {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transition: 2s;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes front {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transition: 2s;
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes icon {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+/* TYPING ANIMATION KEYFRAMES */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Start with no text */
+  }
+  50% {
+    width: 100%; /* Fully typed text */
+  }
+  85% {
+    width: 100%; /* Hold the text visible */
+  }
+  100% {
+    width: 0; /* Reset to no text */
+  }
+}
