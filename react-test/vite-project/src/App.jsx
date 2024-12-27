@@ -1,10 +1,11 @@
 import { RiTailwindCssFill } from "react-icons/ri";
+
 export default function App() {
   return (
     <>
       <div class="container">
-        <h1 class="headerIntro animate--type animate--infinite">
-          BOOOOOOOOOOOOOOOOOOOOOOOOOOP
+        <h1 className="headerIntro animate--type animate--infinite m-20">
+          Hi! I'm Mark Orlando Gabriel Pizarra. Front-End Developer
         </h1>
       </div>
 
